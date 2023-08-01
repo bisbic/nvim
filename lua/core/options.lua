@@ -1,0 +1,13 @@
+vim.opt.number = true
+vim.opt.mouse = 'a'
+vim.opt.numberwidth = 1
+vim.opt.clipboard = 'unnamedplus'
+vim.opt.showcmd = true
+vim.opt.ruler = true
+vim.opt.cursorline = true
+vim.opt.encoding = 'utf-8'
+vim.opt.background = 'dark'
+vim.opt.showmatch = true
+vim.opt.sw = 2
+vim.opt.relativenumber = true
+vim.opt.laststatus = 2
