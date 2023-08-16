@@ -13,7 +13,3 @@ vim.api.nvim_set_keymap("n", "nf", "<cmd>Neotree focus<CR>", {noremap=false})
 -- Markdown
 vim.api.nvim_set_keymap("n", "m", "<cmd>MarkdownPreview<CR>", {noremap=false})
 vim.api.nvim_set_keymap("n", "mn", "<cmd>MarkdownPreviewStop<CR>", {noremap=false})
--- Buffers
-vim.api.nvim_set_keymap("n", "ls", "<cmd>ls<CR>", {noremap=false})
-vim.api.nvim_set_keymap("n", "bn", "<cmd>bn<CR>", {noremap=false})
-vim.api.nvim_set_keymap("n", "bp", "<cmd>bp<CR>", {noremap=false})
