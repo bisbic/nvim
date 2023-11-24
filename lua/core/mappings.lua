@@ -8,3 +8,6 @@ vim.api.nvim_set_keymap("n", "S", "<cmd>HopChar2BC<CR>", {noremap=false})
 -- Markdown
 vim.api.nvim_set_keymap("n", "m", "<cmd>MarkdownPreview<CR>", {noremap=false})
 vim.api.nvim_set_keymap("n", "mn", "<cmd>MarkdownPreviewStop<CR>", {noremap=false})
+-- Bpuffers
+vim.keymap.set("n", "<leader>k", "<cmd>bprevious<CR>", {noremap=false})
+vim.keymap.set("n", "<leader>l", "<cmd>bnext<CR>", {noremap=false})
