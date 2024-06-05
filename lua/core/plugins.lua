@@ -64,6 +64,11 @@ return require('packer').startup(function(use)
     -- Rails
     use({'tpope/vim-rails'})
     use({'vim-ruby/vim-ruby'})
+    -- Tmux
+    use({
+      'christoomey/vim-tmux-navigator',
+      lazy = false
+    })
     -- Misc
     use({
       "iamcco/markdown-preview.nvim",
