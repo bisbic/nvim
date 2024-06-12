@@ -37,15 +37,14 @@ return require('packer').startup(function(use)
     use({'airblade/vim-gitgutter'})
     use({'maximbaz/lightline-ale'})
     use({'itchyny/lightline.vim'})
+    -- LSP Support
     use {
       'VonHeikemen/lsp-zero.nvim',
       branch = 'v2.x',
       requires = {
-	-- LSP Support
 	{'neovim/nvim-lspconfig'},             -- Required
 	{'williamboman/mason.nvim'},           -- Optional
 	{'williamboman/mason-lspconfig.nvim'}, -- Optional
-
 	-- Autocompletion
 	{'hrsh7th/nvim-cmp'},     -- Required
 	{'hrsh7th/cmp-nvim-lsp'}, -- Required
