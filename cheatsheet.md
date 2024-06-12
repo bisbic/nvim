@@ -96,6 +96,13 @@ Vertical split: `C-v`
 
 New tab: `C-t`
 
+## Autocomplete
+Next suggestion: `C-n`
+
+Previous suggestion: `C-p`
+
+Select suggestion: `C-y`
+
 ## Hop (plugin)
 Find forward: `Leader s <two chars>`
 
