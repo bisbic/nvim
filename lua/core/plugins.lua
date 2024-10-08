@@ -59,6 +59,8 @@ return require('packer').startup(function(use)
       config = function() require("nvim-autopairs").setup {} end
     }
     -- IA
+    use({"github/copilot.vim"})
+--[[
     use {
       "Exafunction/codeium.nvim",
       requires = {
@@ -70,6 +72,7 @@ return require('packer').startup(function(use)
 	})
       end
     }
+]]
     -- Rails
     use({'tpope/vim-rails'})
     use({'vim-ruby/vim-ruby'})

@@ -4,8 +4,9 @@ cmp.setup {
   sources = {
     { name = "nvim_lsp" },
     { name = "codeium" },
+    { name = "copilot" },
     { name = "path" },
-    { name = "buffer" },
+    { name = "buffer" }
   },
   mapping = {
     ["<C-n>"] = cmp.mapping.select_next_item { behavior = cmp.SelectBehavior.Insert },
