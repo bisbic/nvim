@@ -84,7 +84,11 @@ Open in external app: `x`
 ## Telescope (plugin)
 Find file: `Leader ff`
 
+Find hidden file: `Leader fff`
+
 Find grep: `Leader fg`
+
+Find hidden grep: `Leader fgg`
 
 Find buffer: `Leader fb`
 
