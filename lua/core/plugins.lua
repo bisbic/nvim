@@ -39,22 +39,14 @@ return require('packer').startup(function(use)
     use({'maximbaz/lightline-ale'})
     use({'itchyny/lightline.vim'})
     -- LSP Support
-    use {
-      'VonHeikemen/lsp-zero.nvim',
-      branch = 'v2.x',
-      requires = {
-	{'neovim/nvim-lspconfig'},             -- Required
-	{'williamboman/mason.nvim'},           -- Optional
-	{'williamboman/mason-lspconfig.nvim'}, -- Optional
-	-- Autocompletion
-	{'hrsh7th/nvim-cmp'},     -- Required
-	{'hrsh7th/cmp-nvim-lsp'}, -- Required
-	{'hrsh7th/cmp-path'},     -- Required
-	{'hrsh7th/cmp-cmdline'},     -- Required
-	{'L3MON4D3/LuaSnip'},     -- Required
-	{'rafamadriz/friendly-snippets'},
-      }
-    }
+    use({'neovim/nvim-lspconfig'})             -- Required
+    use({'williamboman/mason.nvim'})           -- Optional
+    use({'williamboman/mason-lspconfig.nvim'}) -- Optional
+    -- Autocompletion
+    use({'hrsh7th/nvim-cmp'})     -- Required
+    use({'hrsh7th/cmp-nvim-lsp'}) -- Required
+    use({'hrsh7th/cmp-path'})     -- Required
+    use({'hrsh7th/cmp-cmdline'})     -- Required
     use {
       "windwp/nvim-autopairs",
       config = function() require("nvim-autopairs").setup {} end
