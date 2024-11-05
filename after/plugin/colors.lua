@@ -19,4 +19,8 @@ SetColor() -- run at startup
 --
 -- COLORS for kanagawa
 --
-vim.cmd("colorscheme kanagawa-wave")
+-- vim.cmd("colorscheme kanagawa-wave")
+--
+-- COLORS for catppuccin
+--
+vim.cmd.colorscheme "catppuccin"
