@@ -53,6 +53,14 @@ return require('packer').startup(function(use)
     }
     -- IA
     use({"github/copilot.vim"})
+    -- CodeCompanion
+    use({
+      "olimorris/codecompanion.nvim",
+      requires = {
+	"nvim-lua/plenary.nvim",
+	"nvim-treesitter/nvim-treesitter",
+      }
+    })
 --[[
     use {
       "Exafunction/codeium.nvim",
