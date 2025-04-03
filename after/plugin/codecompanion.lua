@@ -1,8 +1,8 @@
 require("codecompanion").setup({
   strategies = {
     chat = {
-      -- adapter = "copilot",
-      adapter = "anthropic",
+      adapter = "copilot",
+      -- adapter = "anthropic",
       slash_commands = {
 	["file"] = {
 	  -- Location to the slash command in CodeCompanion
