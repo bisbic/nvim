@@ -1,7 +1,8 @@
 require("codecompanion").setup({
   strategies = {
     chat = {
-      adapter = "copilot",
+      -- adapter = "copilot",
+      adapter = "anthropic",
       slash_commands = {
 	["file"] = {
 	  -- Location to the slash command in CodeCompanion
@@ -20,6 +21,15 @@ require("codecompanion").setup({
     agent = {
       adapter = "copilot",
     },
+  },
+  adapters = {
+    anthropic = function()
+      return require("codecompanion.adapters").extend("anthropic", {
+        env = {
+          api_key = "cmd: gpg --batch --quiet --decrypt ~/stow/manual/anthropic/codecompanion_anthropic_key.txt.gpg",
+        },
+      })
+    end,
   },
   display = {
     action_palette = {
