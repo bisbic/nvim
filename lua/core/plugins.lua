@@ -52,7 +52,7 @@ return require('packer').startup(function(use)
       config = function() require("nvim-autopairs").setup {} end
     }
     -- IA
-    use({"github/copilot.vim"})
+    -- use({"github/copilot.vim"})
     -- CodeCompanion
     use({
       "olimorris/codecompanion.nvim",

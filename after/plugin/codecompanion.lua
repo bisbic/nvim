@@ -1,8 +1,9 @@
 require("codecompanion").setup({
   strategies = {
     chat = {
-      adapter = "copilot",
-      -- adapter = "anthropic",
+      -- adapter = "copilot",
+      adapter = "anthropic",
+      model = "claude-sonnet-4-20250514",
       slash_commands = {
 	["file"] = {
 	  -- Location to the slash command in CodeCompanion
@@ -16,10 +17,12 @@ require("codecompanion").setup({
       },
     },
     inline = {
-      adapter = "copilot",
+      adapter = "anthropic",
+      model = "claude-sonnet-4-20250514",
     },
     agent = {
-      adapter = "copilot",
+      adapter = "anthropic",
+      model = "claude-sonnet-4-20250514",
     },
   },
   adapters = {
